@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Carregar o arquivo CSV
-dfpaises = pd.read_csv("paises.csv", sep=";")
+dfpaises = pd.read_csv("../../datasets/paises.csv", sep=";")
 
 # Limpar e padronizar os nomes das regiões
 dfpaises['Region'] = dfpaises['Region'].str.strip().str.title()
